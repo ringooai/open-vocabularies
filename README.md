@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This project is currently under active development. Expect breaking changes and potential backward incompatibility as we evolve.
+
 # 🍎 exam-vocabularies
 
 Open-source, community-driven vocabulary datasets for major language proficiency exams (TOEIC, JLPT, HSK, etc.). These datasets are used to power the vocabulary features in the [Ringoo](https://ringoo.ai) app.
