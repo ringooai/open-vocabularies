@@ -35,6 +35,7 @@ exam-vocabularies/
 We stand on the shoulders of giants. The base datasets are derived from high-quality educational resources and refined by the community:
 
 - **TOEIC Vocabulary:** Base word lists provided by [Pass the TOEIC Test](https://www.pass-the-toeic-test.com/toeic-word-list.php).
+- **JLPT Vocabulary:** Base word lists provided by [Open Anki JLPT Decks](https://github.com/jamsinclair/open-anki-jlpt-decks).
 - **Maintenance:** These lists are actively reviewed, corrected, and expanded by **Ringoo app users** and community contributors to ensure they reflect modern usage and bridge exam-specific nuances.
 
 ---
