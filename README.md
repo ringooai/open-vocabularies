@@ -1,5 +1,7 @@
 # 🍎 Open Vocabularies
 
+[日本語](README.ja.md) | [繁體中文](README.zh-Hant.md)
+
 Open-source, community-driven vocabulary datasets for major language proficiency exams (TOEIC, JLPT, HSK, etc.). Our mission is to take high-quality base word lists and transform them into refined, multi-locale datasets contributed by the community. These datasets power the vocabulary features in the [Ringoo](https://ringoo.ai) app.
 
 ## 🚀 Goal
