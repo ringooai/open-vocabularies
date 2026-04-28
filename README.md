@@ -1,9 +1,6 @@
-> [!CAUTION]
-> This project is currently under active development. Expect breaking changes and potential backward incompatibility as we evolve.
+# 🍎 Open Vocabularies
 
-# 🍎 exam-vocabularies
-
-Open-source, community-driven vocabulary datasets for major language proficiency exams (TOEIC, JLPT, HSK, etc.). These datasets are used to power the vocabulary features in the [Ringoo](https://ringoo.ai) app.
+Open-source, community-driven vocabulary datasets for major language proficiency exams (TOEIC, JLPT, HSK, etc.). Our mission is to take high-quality base word lists and transform them into refined, multi-locale datasets contributed by the community. These datasets power the vocabulary features in the [Ringoo](https://ringoo.ai) app.
 
 ## 🚀 Goal
 
@@ -11,6 +8,7 @@ The mission of this repository is to provide **highly accurate, high-quality, an
 1. **Ensure Accuracy:** Allow teachers and native speakers to audit and fix terminology.
 2. **Standardization:** Provide a consistent JSON schema for linguistic data.
 3. **Accessibility:** Support exports to popular formats like Anki, CSV, and more.
+4. **Multi-locale Support:** Provide high-quality translations and localized versions to help learners from all backgrounds.
 
 ---
 
@@ -19,15 +17,17 @@ The mission of this repository is to provide **highly accurate, high-quality, an
 The data is organized by language and exam type under the `data/` directory:
 
 ```text
-exam-vocabularies/
-├── data/                # Raw vocabulary datasets
+open-vocabularies/
+├── data/                # Vocabulary datasets
 │   ├── ja/              # Japanese Exam Datasets
-│   │   ├── jlpt-n5.json # Master JSON dataset
-│   │   ├── jlpt-n5.csv  # Anki-compatible CSV
+│   │   ├── jlpt-n5.json         # Master JSON dataset
+│   │   ├── jlpt-n5.csv          # Upstream Source
+│   │   ├── jlpt-n5_{locale}.csv # Localized Dataset
 │   │   └── ...
 │   └── en/              # English Exam Datasets
-│       ├── toeic.json
-│       └── toeic.csv
+│       ├── toeic.json           # Master JSON dataset
+│       ├── toeic.csv            # Upstream Source
+│       └── toeic_{locale}.csv   # Localized Dataset
 ├── schema.json          # The master data structure definition
 └── scripts/             # Data validation and export tools
 ```
@@ -36,8 +36,8 @@ exam-vocabularies/
 
 We stand on the shoulders of giants. The base datasets are derived from high-quality educational resources and refined by the community:
 
-- **TOEIC Vocabulary:** Base word lists provided by [Pass the TOEIC Test](https://www.pass-the-toeic-test.com/toeic-word-list.php).
-- **JLPT Vocabulary:** Base word lists provided by [Open Anki JLPT Decks](https://github.com/jamsinclair/open-anki-jlpt-decks).
+- **TOEIC Vocabulary:** Base word lists sourced from [Pass the TOEIC Test](https://www.pass-the-toeic-test.com/toeic-word-list.php).
+- **JLPT Vocabulary:** Base word lists sourced from [Open Anki JLPT Decks](https://github.com/jamsinclair/open-anki-jlpt-decks).
 - **Maintenance:** These lists are actively reviewed, corrected, and expanded by **Ringoo app users** and community contributors to ensure they reflect modern usage and bridge exam-specific nuances.
 
 ---
